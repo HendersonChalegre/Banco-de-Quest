@@ -1,0 +1,6 @@
+Na matemática, o fatorial de um número natural n, representado por n!, é o produto de todos os inteiros positivos menores ou iguais a n. A notação n! foi introduzida por Christian Kramp em 1808. Faça um código em C que siga as seguintes instruções
+
+
+a) Faça uma fução que calcule o numero fatorial utilizando for ou while
+
+b) Faça uma fução que calcule o numero fatorial de maneira recursiva
