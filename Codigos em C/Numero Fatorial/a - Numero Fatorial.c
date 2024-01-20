@@ -19,15 +19,11 @@ int fat(int num){
 
 
 //Funcao main apenas para testar a funcao 
-int main(int argc, char *argv[]) {
-	
-	
-	
+int main(int argc, char *argv[]) {	
 	int num;
 	printf("Digite um numero inteiro para calcular o fatorial:    ");
 	scanf("%d", &num);
 	printf("O numero fatoral de %d eh %d", num, fat(num));
-	
 	
 	return 0;
 }
