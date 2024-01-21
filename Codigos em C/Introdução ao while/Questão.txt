@@ -1,0 +1,7 @@
+- Crie um código em C que receba um valor final (N) e imprima sequencias numericas com as seguintes condições:
+
+a - De zero a N
+
+b- Números pares de zero a N
+
+b- Números impares de zero a N
