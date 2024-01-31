@@ -1,0 +1,16 @@
+REGRAS DO JOGO
+
+O jogo vai apresentando uma sequência de cores e o jogador precisa replicar a sequência para passar de fase, caso erre, retorna para o inicio. 
+
+Pressione C para iniciar a partida
+
+UP - Selecionar o azul
+DOWN - Selecionar o verde
+LEFT - Selecionar o amarelo
+RIGHT - Selecionar o vermelho
+
+
+Para girar o cilindro
+
+A - girar 10° para a esquerda
+D - girar 10° para a direita
