@@ -1,0 +1,9 @@
+Nos conceitos de estatística, um número aleatório é um número que pertence a um conjunto numérico, mas que não pode ser previsto a partir dos membros anteriores deste conjunto. O numéro pode ser aleatório em um conjunto ao que pertence  numérica a que o número pertence não aleatório noutro conjunto. Desta maneira, faça o código em C com as instruções a seguir.
+
+
+a) Que receba um valor N e sorteie um numero que pertença ao conjunto de 0 a N.
+
+b) Que receba os valores dos limites do intervalo permitido (i e N) sorteie um numero que pertença ao conjunto de i a N. Obs: N não pode ser menor que i.
+
+
+c) Que receba um valor N da quantidade de caracteres e gere um código aleatorio. Deve se usar os caracteres do alfabeto (A..Z) e os númericos (0..9) 
