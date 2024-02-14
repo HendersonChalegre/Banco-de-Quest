@@ -4,7 +4,7 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 void menu();
 
-//Este metodo tem como função imprimir o cabeçalho do inicio do jogo 
+//Este metodo tem como fun??o imprimir o cabe?alho do inicio do jogo 
 void imprimirCabecalho(){
 	
 		printf("\n\n\n\n\n\n\n                ################################################################################\n");
@@ -18,7 +18,7 @@ void imprimirCabecalho(){
 	printf("                ################################################################################\n\n\n");
 }
 
-//essa função tem a serventia de iniciar o sistema para depois passar para o menu 
+//essa fun??o tem a serventia de iniciar o sistema para depois passar para o menu 
 void inicio(){
 	
 	
@@ -39,7 +39,7 @@ void inicio(){
 
 }
 
-//essa função imprimi as regras para o jogador
+//essa fun??o imprimi as regras para o jogador
 void regras(){
 	
 	
@@ -54,8 +54,8 @@ void regras(){
  	printf("  1- Neste jogo	participam duas pessoas,\n");
 	printf("  2- Os participantes jogam alternadamente,\n");
     printf("  3- Cada participante deve usar um simbolo (X ou O),\n");
-    printf("  4- O jogador 1 deve escolher se de começa usando o X ou o O, consequentemente o jogador 2 fica com outro simbolo\n");
-    printf("  5- A cada jogada, deve-se preencher um dos espaços vazios,\n");
+    printf("  4- O jogador 1 deve escolher se de come?a usando o X ou o O, consequentemente o jogador 2 fica com outro simbolo\n");
+    printf("  5- A cada jogada, deve-se preencher um dos espa?os vazios,\n");
     printf("  6- Vence o jogador que conseguir formar primeiro uma linha com tres simbolos iguais,\n             horizontal,\n             vertical\n             diagonal"),
     
 	
@@ -69,7 +69,7 @@ void regras(){
 	menu ();
 }
 
-//essa função serve para selecionar o simbolo do primeiro jogador
+//essa fun??o serve para selecionar o simbolo do primeiro jogador
 char escolherJogador(){
 	int x;
 	do{
@@ -106,7 +106,7 @@ void limpar(char a[][3]){
 }
 
 
-//Essa função imprimi a matriz do jogo
+//Essa fun??o imprimi a matriz do jogo
 void imprimir (char a[][3]){
 	  system ("cls");
 	printf("\n\n\n\n\n\n\n                ################################################################################\n");
@@ -131,9 +131,9 @@ printf("\n\n\n                ##################################################
 }
 
 
-// essa função escolhe qual a posição a ser jogada...
-//p é o simbolo do jogador (X ou O) e j é o jogador (1 ou 2)
-// vetorVerific serve para verificar se aquela posicao já foi jogada (ele não permite a jogada com numeros abaixo de 1 e acima de 9)
+// essa fun??o escolhe qual a posi??o a ser jogada...
+//p ? o simbolo do jogador (X ou O) e j ? o jogador (1 ou 2)
+// vetorVerific serve para verificar se aquela posicao j? foi jogada (ele n?o permite a jogada com numeros abaixo de 1 e acima de 9)
 void escolherJogada(int vetorVerific[], char a[][3], char p, int j){
 	
 	int i =0;
@@ -227,11 +227,11 @@ void vencedor(int j){
 }
 
 
-//essa função tem como utilizade se já foi finalizada a partida e verifica se teve vencedor ou se deu velha
+//essa fun??o tem como utilizade se j? foi finalizada a partida e verifica se teve vencedor ou se deu velha
 int verificaVencedor(char a[][3], int j, int x){
 	
-	//deu velha se a quantidade de jogadas já se encerrou
-	// (lembrando que a contagem começa no zero, entao depois da ultima jogada, o contador estara em 8)
+	//deu velha se a quantidade de jogadas j? se encerrou
+	// (lembrando que a contagem come?a no zero, entao depois da ultima jogada, o contador estara em 8)
 	if (x == 8){
 		
 		system("cls");
@@ -245,7 +245,7 @@ int verificaVencedor(char a[][3], int j, int x){
 		
 	}
 	
-	// verificação da horizotal
+	// verifica??o da horizotal
 	int i = 0;
 	while (i<3){
 	
@@ -259,7 +259,7 @@ int verificaVencedor(char a[][3], int j, int x){
 	i++;
   }
   
-  //verificação da vertical
+  //verifica??o da vertical
   i = 0;
 	while (i<3){
 	
@@ -273,7 +273,7 @@ int verificaVencedor(char a[][3], int j, int x){
 	i++;
   }
   
-  //verificação da primeira diagonal
+  //verifica??o da primeira diagonal
   if(a[0][0] != ' '){
 		if(a[0][0] == a[1][1] &&  a[1][1] == a[2][2]){
 			imprimir (a);
@@ -282,7 +282,7 @@ int verificaVencedor(char a[][3], int j, int x){
 		} 
 	}
 	
-  // verificação da segunda diagonal
+  // verifica??o da segunda diagonal
   if(a[0][2] != ' '){
 		if(a[0][2] == a[1][1] &&  a[1][1] == a[2][0]){
 			imprimir (a);
@@ -291,13 +291,13 @@ int verificaVencedor(char a[][3], int j, int x){
 		} 
 	}
   
-  //o retonrno desta função serve para parar ou não o while que existe na função partida
-  //assim, se retornar 10, é pq a partida tem que ser finalizada 
-  //se retornar x, é a quantidade de jogadas que já tiveram e assim pode prosseguir
+  //o retonrno desta fun??o serve para parar ou n?o o while que existe na fun??o partida
+  //assim, se retornar 10, ? pq a partida tem que ser finalizada 
+  //se retornar x, ? a quantidade de jogadas que j? tiveram e assim pode prosseguir
   return x;
 }
 
-//função que gera 1 partida
+//fun??o que gera 1 partida
 void partida(){
 	
 	int v[10] = {0,0,0,0,0,0,0,0,0,0};
@@ -335,7 +335,7 @@ void partida(){
 	  menu();		
 }
 
-//funão para criar a informção sobre o desenvolvedor
+//fun?o para criar a inform??o sobre o desenvolvedor
 void infor(){
 	char h ='x';
 	do{
@@ -392,3 +392,4 @@ int main(int argc, char *argv[]) {
 	
 	return 0;
 }
+
