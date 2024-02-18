@@ -7,3 +7,8 @@ b) Que receba os valores dos limites do intervalo permitido (i e N) sorteie um n
 
 
 c) Que receba um valor N da quantidade de caracteres e gere um código aleatorio. Deve se usar os caracteres do alfabeto (A..Z) e os númericos (0..9) 
+
+
+d) Que receba um valor N da quantidade de caracteres e gere um vetor de inteiros aleatorio. obs: O valor maximo que pode ter que cada posição pode receber é N.
+
+e) Que receba um valor N da quantidade de caracteres e gere um vetor de inteiros aleatorio e que não pode ter valores repetidos. obs: O valor maximo que pode ter que cada posição pode receber é N.

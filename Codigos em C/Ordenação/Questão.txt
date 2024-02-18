@@ -1,0 +1,10 @@
+Ordenar é o ato de organizar/classificar uma quantidade N de elementos (dados) de maneira que siga uma sequência lógica. O termo tecnico na lingua inglesa é sorting, cuja sua tradução literal é "classificação". Desta maneira, faça o código em C que ordene o vetor abaixo usando o seguinte vetor  [10,7,9,8,5,2,6,4,3,1]
+
+
+a) Bubble sort
+
+b) Insertion sort
+
+c) Selection sort
+
+d) Merge sort
