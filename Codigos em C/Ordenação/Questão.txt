@@ -8,3 +8,5 @@ b) Insertion sort
 c) Selection sort
 
 d) Merge sort
+
+e) Quick sort

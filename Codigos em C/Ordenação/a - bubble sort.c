@@ -75,5 +75,9 @@ int main(int argc, char *argv[]) {
 	printf("\n\n ");
 	
 	bubbleSort(vetor, t);
+	
+	printf("\n\n\n\nvetor ordenado: ");
+	imprimirVetor(vetor,t);
+	printf("\n\n\n\n\n");
 	return 0;
 }

@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 
-
 /*#########################################################################################################################################################
                                                      metodo para imprimir o vetor
   #########################################################################################################################################################*/
@@ -19,7 +18,6 @@ void imprimirVetor (int vetor[], int tam){
 }
 
 
-
 /*#########################################################################################################################################################
                                                      metodo para trocar as posicoes do vetor
   #########################################################################################################################################################*/
@@ -30,28 +28,47 @@ void swap(int vetor[], int  x, int y){
 	
 }
 
+
+
 /*#########################################################################################################################################################
-                                                     metodo para ordenar 
+                                                     metodos para ordenar 
   #########################################################################################################################################################*/
-void insertionSort(int vetor[], int tam){
+
+int dividir(int vet[], int i, int f){
+	int p = vet[f];;
+	int p2 = i;
+	int y;
 	
-	int i = 1; // inicia na posicao 1
-	
-	
-	while(i<tam){ // a quantidade de vezes que repetira é o limitado pelo tamanho do vetor
-		printf("\nFase %d: ", i); // fase atual
+	for(y = i; y < f; y++){
 		
-		int j =i; // inicio 
-		while (j > 0 && vetor[j] < vetor[j-1]) {
-			swap(vetor, j, j-1); //troca
-			j--; // incrementa o j	
+		if(vet[y] <= p) {
+			swap(vet, y, p2);
+			p2++;
 		}
-		
-		imprimirVetor ( vetor, tam);
-		
-		i++; // incrementa o i
+	}
+	
+	swap(vet, p2, f); // troca o pivô
+	
+	return p2;
+}
+
+
+int dividirRandom(int vetor[], int i, int f) {
+	
+	int p = (rand() % (f - i + 1)) + i; // seleciona um número entre o inicio e o  fim 
+	swap(vetor, p, f); 	// faz a troca para colocar o pivô no fim
+	return dividir(vetor, i, f);
+}
+
+void quickSort(int vetor[], int i, int f) {
+	if(i< f) {
+		int p = dividirRandom(vetor, i, f);
+		quickSort(vetor, i, p - 1);
+		quickSort(vetor, p + 1, f);
 	}
 }
+
+
 
 /*#########################################################################################################################################################
                                                      metodo para iniciar o sistema
@@ -63,18 +80,23 @@ int main(int argc, char *argv[]) {
 	
 	printf("\n\n\n                                                            ORDENACAO\n\n");
 	
-	printf("                                                          INSERTION SORT\n\n");
+	printf("                                                          Quick SORT\n\n");
 	
 	
 	printf("vetor original: ");
 	imprimirVetor(vetor,t);
 	
-	printf("\n\n ");
+	printf("\n\n");
 	
-	insertionSort(vetor, t);
-	
-	printf("\n\n\n\nvetor ordenado: "); 
+	srand(time(NULL));
+	 
+	// chamada do quicksort
+	quickSort(vetor, 0, t - 1);
+
+
+    printf("vetor ordenado: "); 
 	imprimirVetor(vetor,t);
 	printf("\n\n\n\n\n");
+	
 	return 0;
 }

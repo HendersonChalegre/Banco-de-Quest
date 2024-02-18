@@ -110,7 +110,9 @@ int main(int argc, char *argv[]) {
 	mergeSort(vetor,  t);
      
      
+	 printf("vetor ordenado: "); 
 	imprimirVetor(vetor,t);
+	printf("\n\n\n\n\n");
 	
 	return 0;
 }

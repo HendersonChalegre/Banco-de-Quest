@@ -4,4 +4,8 @@ a - De zero a N
 
 b- Números pares de zero a N
 
-b- Números impares de zero a N
+c- Números impares de zero a N
+
+
+
+
