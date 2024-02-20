@@ -1,0 +1,8 @@
+Questão 01 - Programar é o processo de escrever, de maneira compreensivel para as maquinas, conjuntos de instruções que podem ser executadas pelo computador. Desta maneira, faça seu primeiro código em C e imprima no prompt a frase "Hello World"
+
+
+Questão 02 - As variaveis são maneiras de armazenar dados provisoriamente, enquanto o comando scanf é uma das maneiras do sistema receber os dados. Faça um código em C que tenha as seguintes instruções
+
+a) Receba um número inteiro N, armazene e imprima o numero da seguinte maneira "O numero digitado eh: N"
+
+b)Receba dois numeros números inteiros (N e X), some e armazene em R e imprima o resultado da seguinte maneira: "O resultado da soma de N + X eh: R"

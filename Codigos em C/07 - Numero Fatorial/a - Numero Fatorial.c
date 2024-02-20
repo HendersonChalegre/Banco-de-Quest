@@ -13,7 +13,7 @@ int fat(int num){
     i--;
    }
 
-   return num; // 
+   return num; // resultado
 	
 }
 

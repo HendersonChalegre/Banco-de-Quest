@@ -1,0 +1,7 @@
+Questão 01: Uma loja oferece descontos em compras. Os descontos variam de 3 maneiras: Clientes comuns não possuem descontos,  5% para compras feitas pelos funcionarios e 10% para clientes vips que possuem o cartão fidelidade. Faça um código em C que utilize Switch para selecionar os tipos de descontos.
+
+Questão 02: Em uma loja chamada Bom de Compras, ao finalizar as compras, é inserido o valor total e é selecionado o tipo de pagamento com duas modalidades: Á vista e a prazo. Nos pagamentos á vista, o cliente tem 10% de descontos, nos pagamentos a prazo, o cliente tem opção de dividir em até 10x sem juros ou em até 24x com uma taxa de juros de 5%, além disso, as parcelas devem ser de no minimo R$ 50,00.Faça um código em C que utilize Switch e if para selecionar os tipos de pagamento e parcelas.
+
+
+Questão 03 - O calendário gregoriano, foi promulgado pelo Papa Gregório XIII em 24 de fevereiro do ano 1582, esse calendario foi adotado oficialmente pela maioria dos países e substituiu o calendário juliano implantado pelo líder romano Júlio César em 46 a.C.  Faça um código em C que o usuário escolha de 1 a 12 e mostre qual o mês referente e quantos dias pode ter. Observação: Utilize Switch e caso o usuário 
+
